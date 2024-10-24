@@ -62,10 +62,10 @@ author:
   links:
     - label: "Linkedin"
       icon: "fas fa-fw fa-link"
-      url: "https://www.linkedin.com/in/hamidreza-yaghoubi-2960611b8/details/experience/"
+      url: "https://www.linkedin.com/in/hamidreza-yaghoubi-2960611b8/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/HamidrezaYaghoubi"
 
 footer:
   links:
