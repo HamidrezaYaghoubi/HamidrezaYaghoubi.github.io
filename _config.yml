@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hamidreza Yaghoubi Araghi
+title: Hamidreza Yaghoubi
 email: yaghoubi@umd.edu
 description: >- # this means to ignore newlines until "baseurl:"
   I am currently a first year CS Ph.D. student at the University of Maryland, supervised by Professor Ming Lin.
@@ -58,8 +58,11 @@ plugins:
 author:
   name   : "Hamidreza Yaghoubi"
   avatar : "/assets/images/Profile.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "I am currently a first year CS Ph.D. student at the University of Maryland, supervised by Professor Ming Lin."
   links:
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-google-scholar"
+      url: "https://scholar.google.com/citations?user=oa9KkfkAAAAJ&hl=en"
     - label: "Linkedin"
       icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/hamidreza-yaghoubi-2960611b8/"
@@ -69,15 +72,15 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
