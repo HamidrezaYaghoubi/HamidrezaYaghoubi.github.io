@@ -61,7 +61,7 @@ author:
   bio    : "I am currently a first year CS Ph.D. student at the University of Maryland, supervised by Professor Ming Lin."
   links:
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-google-scholar"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=oa9KkfkAAAAJ&hl=en"
     - label: "Linkedin"
       icon: "fas fa-fw fa-link"
@@ -72,6 +72,7 @@ author:
 
 footer:
   links:
+  <i class="fa-brands fa-google-scholar"></i>
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
