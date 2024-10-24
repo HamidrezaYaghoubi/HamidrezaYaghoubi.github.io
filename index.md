@@ -5,3 +5,8 @@
 layout: single
 author_profile: true
 ---
+Im a first year **Ph.d Student** at the University of Maryland. My research interests are in Machine Learning and Deep Learning.
+
+-Project1
+-Project2
+-Project2
