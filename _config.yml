@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/Profile.jpg"
+  avatar           : "/images/Profile.jpg"
   name             : "Hamidreza Yaghoubi"
   pronouns         : # example: "he/his"  
   bio              : "Ph.D. student"
@@ -48,7 +48,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # HamidrezaYaghoubi
+  linkedin         : hamidreza-yaghoubi-2960611b8
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
