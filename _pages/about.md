@@ -20,6 +20,21 @@ Publications
 
 Work Experience
 ======
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div>
+    <strong style="font-size: 1.2em;">Data Scientist</strong>  
+    <br>
+    <strong>TAPSI, Iranian Ride-Hailing Company</strong>
+  </div>
+  <div style="text-align: right; font-style: italic;">
+    Tehran, Iran  
+    <br>
+    <span style="color: gray;">Feb 2021 - Feb 2023</span>
+  </div>
+</div>
+
+TPASI stands as one of Iran’s largest and most technologically advanced companies. Notable projects I contributed to include:
+
 **TAPSI, Iranian Ride-Hailing Company**  
 *Tehran, Iran*  
 *Feb 2021 - Feb 2023*  
