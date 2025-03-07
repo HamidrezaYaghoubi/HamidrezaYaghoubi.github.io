@@ -35,6 +35,6 @@ Work Experience
 TPASI stands as one of Iran’s largest and most technologically advanced companies. Notable projects I contributed to include:
 
 - **Estimated Time of Arrival (ETA):** Investigated and developed traffic prediction models, improving ETA accuracy using techniques inspired by industry best practices.
-- **Location Search Engine:** Preparation and processing of raw data, as well as the design and implementation of an in-house location search engine. Developed and defined offline and online metrics that are correlated with each other and aligned with key business objectives.
-- **GPS Denoising:** Worked on noise reduction techniques for GPS data, enhancing data quality and reliability, which is critical for precise location-based services and ETA calculations.
-- **Destination Suggestion:** Developed machine learning models to recommend destinations to a user based on her/his ride data.
+- **Location Search Engine:** Processed raw data and built an in-house search engine with optimized offline and online metrics.
+- **GPS Denoising:** Applied noise reduction techniques to enhance GPS data quality and reliability for location-based services.
+- **Destination Suggestion:** Built ML models to recommend destinations based on user ride data.
