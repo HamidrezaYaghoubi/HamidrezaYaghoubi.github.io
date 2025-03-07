@@ -37,9 +37,10 @@ Academic Service
 ------
 <div style="display: flex; justify-content: space-between; align-items: baseline;">
   <div>
-    <strong>Reviewer</strong>, TAPSI
+    <strong>Reviewer</strong>
   </div>
   <div style="text-align: right; font-style: italic;">
-    [Workshop on Spurious Correlation and Shortcut Learning](https://scslworkshop.github.io/)  | ICLR 2025
+    <a href="https://scslworkshop.github.io" target="_blank">Workshop on Spurious Correlation and Shortcut Learning</a> | ICLR 2025
   </div>
 </div>
+
