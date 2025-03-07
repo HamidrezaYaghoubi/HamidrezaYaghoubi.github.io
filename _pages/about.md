@@ -32,3 +32,14 @@ TPASI stands as one of Iran’s largest and most technologically advanced compan
 - **Location Search Engine:** Processed raw data and built an in-house search engine with optimized offline and online metrics.
 - **GPS Denoising:** Applied noise reduction techniques to enhance GPS data quality and reliability for location-based services.
 - **Destination Suggestion:** Built ML models to recommend destinations based on user ride data.
+
+Academic Service
+------
+<div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div>
+    <strong>Reviewer</strong>, TAPSI
+  </div>
+  <div style="text-align: right; font-style: italic;">
+    [Workshop on Spurious Correlation and Shortcut Learning](https://scslworkshop.github.io/)  | ICLR 2025
+  </div>
+</div>
