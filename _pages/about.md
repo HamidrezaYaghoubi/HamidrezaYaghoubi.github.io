@@ -12,6 +12,7 @@ I am currently a first-year CE Ph.D. student at the University of Maryland, Coll
 My research interests lie in <strong>Machine Learning</strong> and <strong>Deep Learning</strong>. More specifically, I'm interested in developing and optimizing models and algorithms to address real-world challenges. Previously, I conducted research on projects such as <strong>Traffic Forecasting</strong> and <strong>Generalization</strong> across different distributions. Currently, I'm researching  <strong>Trajectory Forecasting</strong> based on different personality types.
 </div>
 
+
 Publications
 ======
 1. Quantifying and Modeling Driving Styles in Trajectory Forecasting, Laura Zheng\*, **Hamidreza Yaghoubi\***, Tony Wu, Sandeep Thalapanane, Tianyi Zhou, and Ming C. Lin, Under Review at IROS 2025.
