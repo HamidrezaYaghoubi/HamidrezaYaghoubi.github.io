@@ -9,6 +9,23 @@ redirect_from:
 <div style="text-align: justify;">
 I'm a first-year Ph.D. student in Computer Engineering at the University of Maryland, College Park, working under the supervision of Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
 <br>
+<br>
+<p>
+  My research is dedicated to building trustworthy, safety-critical AI systems that people can depend on. I pursue two complementary lines of work:
+</p>
+
+<ul>
+  <li>
+    <strong>Behavior-informed trajectory forecasting</strong> for autonomous vehicles, where models learn human driving styles to support robust interaction with other road users.
+  </li>
+  <li>
+    <strong>Efficiency-versus-safety trade-offs</strong> in learning-based algorithms, investigating how to balance resource use and risk management in critical applications.
+  </li>
+</ul>
+
+<p>
+  Together, these efforts aim to advance AI that not only performs well across diverse real-world scenarios but also upholds the rigorous safety guarantees needed for human trust.
+</p>
 My research interests lie in <strong>Machine Learning</strong> and <strong>Deep Learning</strong>. More specifically, I'm interested in developing and optimizing models and algorithms to address real-world challenges. Previously, I conducted research on projects such as <strong>Traffic Forecasting</strong> and <strong>Generalization</strong> across different distributions. Currently, I'm researching  <strong>Trajectory Forecasting</strong> based on different personality types.
 </div>
 
