@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 <div style="text-align: justify;">
-I am currently a first-year CE Ph.D. student at the University of Maryland, College Park, supervised by Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
+I'm a first-year Ph.D. student in Computer Engineering at the University of Maryland, College Park, working under the supervision of Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
 <br>
 My research interests lie in <strong>Machine Learning</strong> and <strong>Deep Learning</strong>. More specifically, I'm interested in developing and optimizing models and algorithms to address real-world challenges. Previously, I conducted research on projects such as <strong>Traffic Forecasting</strong> and <strong>Generalization</strong> across different distributions. Currently, I'm researching  <strong>Trajectory Forecasting</strong> based on different personality types.
 </div>
