@@ -11,7 +11,7 @@ I'm a first-year Ph.D. student in Computer Engineering at the University of Mary
 <br>
 <br>
 <p>
-  My research is dedicated to building trustworthy, safety-critical AI systems that people can depend on. I pursue two complementary lines of work:
+  My research is dedicated to building trustworthy, safety-critical AI systems that people can rely on. Currently, I pursue two complementary lines of work:
 </p>
 
 <ul>
@@ -26,7 +26,7 @@ I'm a first-year Ph.D. student in Computer Engineering at the University of Mary
 <p>
   Together, these efforts aim to advance AI that not only performs well across diverse real-world scenarios but also upholds the rigorous safety guarantees needed for human trust.
 </p>
-My research interests lie in <strong>Machine Learning</strong> and <strong>Deep Learning</strong>. More specifically, I'm interested in developing and optimizing models and algorithms to address real-world challenges. Previously, I conducted research on projects such as <strong>Traffic Forecasting</strong> and <strong>Generalization</strong> across different distributions. Currently, I'm researching  <strong>Trajectory Forecasting</strong> based on different personality types.
+<!-- My research interests lie in <strong>Machine Learning</strong> and <strong>Deep Learning</strong>. More specifically, I'm interested in developing and optimizing models and algorithms to address real-world challenges. Previously, I conducted research on projects such as <strong>Traffic Forecasting</strong> and <strong>Generalization</strong> across different distributions. Currently, I'm researching  <strong>Trajectory Forecasting</strong> based on different personality types. -->
 </div>
 
 <div style="margin-bottom: 20px;"></div>
