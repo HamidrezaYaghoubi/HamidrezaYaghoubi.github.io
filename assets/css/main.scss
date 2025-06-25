@@ -334,3 +334,64 @@ html {
     }
   }
 }
+
+/* AGGRESSIVE OVERRIDES FOR GITHUB PAGES COMPATIBILITY */
+/* These styles use !important to ensure they override theme defaults */
+
+/* Force full width layout on GitHub Pages */
+#main {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 2em !important;
+}
+
+.page {
+  width: 100% !important;
+  max-width: none !important;
+  float: none !important;
+}
+
+.page__inner-wrap {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.page__content {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Ensure sidebar doesn't interfere */
+@media (min-width: 1024px) {
+  .page {
+    width: calc(100% - 300px) !important;
+    margin-left: 300px !important;
+  }
+  
+  .sidebar {
+    width: 280px !important;
+  }
+  
+  #main {
+    margin-left: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+}
+
+/* Force About section to be full width */
+.about-content {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Typography overrides */
+html {
+  font-size: 15px !important;
+}
+
+.page__content p {
+  font-size: 0.95em !important;
+  line-height: 1.6 !important;
+}

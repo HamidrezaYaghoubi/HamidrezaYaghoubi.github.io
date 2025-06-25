@@ -6,7 +6,24 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div class="about-content">
+
+<style>
+/* Inline CSS to force full width on GitHub Pages */
+.page__content {
+  max-width: none !important;
+  width: 100% !important;
+}
+.about-content {
+  max-width: none !important;
+  width: 100% !important;
+}
+#main {
+  max-width: 1200px !important;
+  width: 100% !important;
+}
+</style>
+
+<div class="about-content" style="width: 100% !important; max-width: none !important;">
 I'm a first-year Ph.D. student in Computer Engineering at the University of Maryland, College Park, working under the supervision of Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
 
 <p>
