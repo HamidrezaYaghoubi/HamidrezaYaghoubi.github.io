@@ -39,4 +39,298 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-@import "custom";
+
+/* Custom CSS for cleaner, more professional appearance */
+
+/* Reduce base font size for better readability */
+html {
+  font-size: 15px !important; /* Reduced from 18px */
+}
+
+/* Improve content width and layout */
+#main {
+  max-width: 1100px !important; /* Increased from 925px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.page {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page__inner-wrap {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 !important;
+}
+
+.page__content {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 auto;
+  
+  /* Better typography */
+  line-height: 1.6;
+  
+  p {
+    margin-bottom: 1.2em;
+    font-size: 0.95em; /* Slightly smaller text */
+  }
+  
+  ul, ol {
+    margin-bottom: 1.2em;
+    
+    li {
+      margin-bottom: 0.5em;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+    font-weight: 600; /* Slightly lighter than bold */
+  }
+  
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.3em; }
+  h4 { font-size: 1.1em; }
+  h5 { font-size: 1em; }
+  h6 { font-size: 0.9em; }
+}
+
+/* Improve sidebar layout on larger screens */
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 250px !important;
+  }
+  
+  .page {
+    width: calc(100% - 280px) !important;
+    margin-left: 280px !important;
+    float: none !important;
+    padding: 0 !important;
+  }
+  
+  #main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+/* Better text styling for the about section */
+.about-content {
+  /* Removed max-width to make About section as wide as other sections */
+  text-align: justify;
+  
+  p {
+    margin-bottom: 1.3em;
+    font-size: 0.95em;
+    line-height: 1.65;
+  }
+  
+  ul {
+    margin: 1.2em 0;
+    padding-left: 1.5em;
+    
+    li {
+      margin-bottom: 0.8em;
+      line-height: 1.6;
+      
+      strong {
+        font-weight: 600;
+        color: #2c3e50;
+      }
+    }
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Publications section improvements */
+.publications {
+  margin: 1.5em 0;
+  
+  ol {
+    padding-left: 1.2em;
+    counter-reset: publication-counter;
+    
+    li {
+      margin-bottom: 1.2em;
+      line-height: 1.7;
+      font-size: 0.95em;
+      list-style: none;
+      counter-increment: publication-counter;
+      position: relative;
+      padding-left: 0.5em;
+      
+      &:before {
+        content: counter(publication-counter) ".";
+        position: absolute;
+        left: -1.2em;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+      
+      a {
+        color: #3498db;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          color: #2980b9;
+          text-decoration: underline;
+        }
+      }
+      
+      strong {
+        color: #2c3e50;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Clean up work experience section */
+.work-experience {
+  margin-top: 2em;
+  
+  .experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.2em;
+    
+    .title {
+      font-weight: 600;
+      font-size: 1em;
+      
+      strong {
+        color: #2c3e50;
+      }
+    }
+    
+    .details {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #666;
+      text-align: right;
+    }
+  }
+  
+  .work-description {
+    margin-top: 1em;
+    
+    p {
+      margin-bottom: 1em;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+    
+    .project-list {
+      margin: 1em 0;
+      padding-left: 2em;
+      
+      li {
+        margin-bottom: 0.8em;
+        line-height: 1.6;
+        font-size: 0.95em;
+        list-style-type: disc;
+        
+        strong {
+          color: #2c3e50;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/* Academic Service section */
+.academic-service {
+  margin-top: 2em;
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1em;
+    
+    .title {
+      font-weight: 600;
+      font-size: 1em;
+      
+      strong {
+        color: #2c3e50;
+      }
+      
+      a {
+        color: #3498db;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          color: #2980b9;
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    .details {
+      font-style: italic;
+      font-size: 0.9em;
+      color: #666;
+      text-align: right;
+    }
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px !important;
+  }
+  
+  #main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .page__content {
+    p, li {
+      font-size: 1em;
+    }
+  }
+  
+  .work-experience .experience-item,
+  .academic-service .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .details {
+      text-align: left;
+      margin-top: 0.3em;
+    }
+  }
+}
