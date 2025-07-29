@@ -63,7 +63,7 @@ I'm a first-year Ph.D. student in Computer Engineering at the University of Mary
 </div>
 
 <div class="work-description">
-<p>TPASI stands as one of Iran's largest and most technologically advanced companies. Notable projects I contributed to include:</p>
+<p>TAPSI is an Iranian ride‑hailing company similar to Uber, and stands as one of Iran’s largest and most technologically advanced companies. Notable projects I contributed to include:</p>
 
 <ul class="project-list">
 <li><strong>Estimated Time of Arrival (ETA):</strong> Investigated and developed traffic prediction models, improving ETA accuracy using techniques inspired by industry best practices.</li>
