@@ -24,7 +24,7 @@ redirect_from:
 </style>
 
 <div class="about-content" style="width: 100% !important; max-width: none !important;">
-I'm a first-year Ph.D. student in Computer Engineering at the University of Maryland, College Park, working under the supervision of Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
+I'm a second year Ph.D. student in Computer Engineering at the University of Maryland, College Park, working under the supervision of Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
 
 <p>
   My research is dedicated to building trustworthy, safety-critical AI systems that people can rely on. Currently, I pursue two complementary lines of work:
