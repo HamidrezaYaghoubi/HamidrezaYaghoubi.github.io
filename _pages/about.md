@@ -44,14 +44,28 @@ I'm a second year Ph.D. student in Computer Engineering at the University of Mar
 </p>
 </div>
 
-## Publications
+## Publications & Preprints
 
 <div class="publications">
 <ol>
-<li><a href="https://arxiv.org/abs/2503.04994" target="_blank">Quantifying and Modeling Driving Styles in Trajectory Forecasting</a>, Laura Zheng*, <strong>Hamidreza Yaghoubi*</strong>, Tony Wu, Sandeep Thalapanane, Tianyi Zhou, and Ming C. Lin, Accepted at IROS 2025.</li>
-<li><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Noohdani_Decompose-and-Compose_A_Compositional_Approach_to_Mitigating_Spurious_Correlation_CVPR_2024_paper.pdf" target="_blank">Decompose-and-Compose: A Compositional Approach to Mitigating Spurious Correlation</a>, Fahimeh Hosseini Noohdani, Parsa Hosseini, Aryan Yazdan Parast, <strong>Hamidreza Yaghoubi</strong>, Mahdieh Soleymani Baghshah, CVPR 2024.</li>
-<li><a href="https://arxiv.org/pdf/2312.04893" target="_blank">Annotation-Free Group Robustness via Loss-Based Resampling</a>, Mahdi Ghaznavi, Hesam Asadollahzadeh, <strong>Hamidreza Yaghoubi</strong>, Fahimeh Hosseini Noohdani, Mohammad Hossein Rohban, Mahdieh Soleymani Baghshah, OOD-CV at ICCV 2023.</li>
+<li>
+  <a href="https://arxiv.org/abs/2503.04994" target="_blank">Quantifying and Modeling Driving Styles in Trajectory Forecasting</a>
+  <span class="pub-authors">Laura Zheng*, <strong>Hamidreza Yaghoubi*</strong>, Tony Wu, Sandeep Thalapanane, Tianyi Zhou, and Ming C. Lin</span>
+  <span class="pub-venue">IROS 2025</span>
+</li>
+<li>
+  <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Noohdani_Decompose-and-Compose_A_Compositional_Approach_to_Mitigating_Spurious_Correlation_CVPR_2024_paper.pdf" target="_blank">Decompose-and-Compose: A Compositional Approach to Mitigating Spurious Correlation</a>
+  <span class="pub-authors">Fahimeh Hosseini Noohdani, Parsa Hosseini, Aryan Yazdan Parast, <strong>Hamidreza Yaghoubi</strong>, Mahdieh Soleymani Baghshah</span>
+  <span class="pub-venue">CVPR 2024</span>
+</li>
+<li>
+  <a href="https://arxiv.org/pdf/2312.04893" target="_blank">Annotation-Free Group Robustness via Loss-Based Resampling</a>
+  <span class="pub-authors">Mahdi Ghaznavi, Hesam Asadollahzadeh, <strong>Hamidreza Yaghoubi</strong>, Fahimeh Hosseini Noohdani, Mohammad Hossein Rohban, Mahdieh Soleymani Baghshah</span>
+  <span class="pub-venue">OOD-CV at ICCV 2023</span>
+</li>
 </ol>
+
+<p class="pub-note">* denotes equal contribution.</p>
 </div>
 
 ## Work Experiences
@@ -78,7 +92,17 @@ I'm a second year Ph.D. student in Computer Engineering at the University of Mar
 
 <div class="academic-service">
 <div class="service-item">
-  <div class="title"><strong>Reviewer</strong>, <a href="https://scslworkshop.github.io" target="_blank">Workshop on Spurious Correlation and Shortcut Learning</a></div>
+  <div class="title"><strong>Reviewer</strong>, (Invited)</div>
+  <div class="details">CVPR 2026</div>
+</div>
+
+<div class="service-item">
+  <div class="title"><strong>Reviewer</strong></div>
+  <div class="details">ICRA 2026</div>
+</div>
+
+<div class="service-item">
+<div class="title"><strong>Reviewer</strong>, <a href="https://scslworkshop.github.io" target="_blank">Workshop on Spurious Correlation and Shortcut Learning</a></div>
   <div class="details">ICLR 2025</div>
 </div>
 </div>
