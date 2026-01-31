@@ -93,6 +93,10 @@ I'm a second year Ph.D. student in Computer Engineering at the University of Mar
 <div class="academic-service">
 <div class="service-item">
   <div class="title"><strong>Reviewer</strong>, (Invited)</div>
+  <div class="details">ECCV 2026</div>
+</div>
+<div class="service-item">
+  <div class="title"><strong>Reviewer</strong>, (Invited)</div>
   <div class="details">CVPR 2026</div>
 </div>
 
