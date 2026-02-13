@@ -24,24 +24,15 @@ redirect_from:
 </style>
 
 <div class="about-content" style="width: 100% !important; max-width: none !important;">
+<p>
 I'm a second year Ph.D. student in Computer Engineering at the University of Maryland, College Park, working under the supervision of Professor <a href="https://www.cs.umd.edu/~lin/" target="_blank">Ming Lin</a>. Previously, I got my B.S. in Computer Engineering from Sharif University of Technology, where I worked with Professor <a href="https://sharif.edu/~soleymani/" target="_blank">Mahdieh Soleymani</a>, and Professor <a href="https://sharif.edu/~rohban/index.html" target="_blank">Mohammad Hossein Rohban</a>.
-
+</p>
 <p>
-  My research is dedicated to building trustworthy, safety-critical AI systems that people can rely on. Currently, I pursue two complementary lines of work:
+  My research focuses on making AI systems more reliable and safe, especially when they are deployed in real-world, resource-constrained settings.
+  A recurring theme in my work is understanding when models appear accurate on average but behave unexpectedly in important or edge cases.
+  My current focus is understanding how quantization can change model decisions, not just overall accuracy, particularly under distribution shift and rare cases. More broadly, I investigate efficiency and safety trade-offs in learning-based systems.
 </p>
 
-<ul>
-  <li>
-    <strong>Behavior-informed trajectory forecasting</strong> for autonomous vehicles, where models learn human driving styles to support robust interaction with other road users.
-  </li>
-  <li>
-    <strong>Efficiency-versus-safety trade-offs</strong> in learning-based algorithms, investigating how to balance resource use and risk management in critical applications.
-  </li>
-</ul>
-
-<p>
-  Together, these efforts aim to advance AI that not only performs well across diverse real-world scenarios but also upholds the rigorous safety guarantees needed for human trust.
-</p>
 </div>
 
 ## Publications & Preprints
