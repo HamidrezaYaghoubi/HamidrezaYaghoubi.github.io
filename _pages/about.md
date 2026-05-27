@@ -30,7 +30,7 @@ I'm a second year Ph.D. student in Computer Engineering at the University of Mar
 <p>
   My research focuses on making AI systems more reliable and safe, especially when they are deployed in real-world, resource-constrained settings.
   A recurring theme in my work is understanding when models appear accurate on average but behave unexpectedly in important or edge cases.
-  My current focus is understanding how quantization can change model decisions, not just overall accuracy, particularly under distribution shift and rare cases. More broadly, I investigate efficiency and safety trade-offs in learning-based systems.
+  <!-- My current focus is understanding how quantization can change model decisions, not just overall accuracy, particularly under distribution shift and rare cases. More broadly, I investigate efficiency and safety trade-offs in learning-based systems. -->
 </p>
 
 </div>
