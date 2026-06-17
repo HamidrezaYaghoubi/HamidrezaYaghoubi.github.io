@@ -40,6 +40,16 @@ I'm a second year Ph.D. student in Computer Engineering at the University of Mar
 <div class="publications">
 <ol>
 <li>
+  <a>Recti-Q: Feature-Space Rectification for Out-of-Distribution-Robust Quantized Perception in Edge Robotics</a>
+  <span class="pub-authors"><strong>Hamidreza Yaghoubi*</strong>, Parastoo Pilevar*, and Ming C. Lin</span>
+  <span class="pub-venue">Accepted in IROS 2026</span>
+</li>
+<li>
+  <a>PolySona: Parameter-Efficient Driving Style Modeling for Trajectory Prediction.</a>
+  <span class="pub-authors">Laura Zheng, <strong>Hamidreza Yaghoubi</strong>, Tony Wu, Tianyi Zhou, and Ming C. Lin</span>
+  <span class="pub-venue">Accepted in IROS 2026</span>
+</li>
+<li>
   <a href="https://arxiv.org/abs/2503.04994" target="_blank">Quantifying and Modeling Driving Styles in Trajectory Forecasting</a>
   <span class="pub-authors">Laura Zheng*, <strong>Hamidreza Yaghoubi*</strong>, Tony Wu, Sandeep Thalapanane, Tianyi Zhou, and Ming C. Lin</span>
   <span class="pub-venue">IROS 2025</span>
