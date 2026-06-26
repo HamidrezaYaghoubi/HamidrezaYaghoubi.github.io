@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Hamidreza Yaghoubi</title>
+  <meta name="description" content="Blog by Hamidreza Yaghoubi — coming soon.">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:          #0d1117;
+      --bg2:         #161b22;
+      --bg3:         #21262d;
+      --border:      #30363d;
+      --accent:      #58a6ff;
+      --accent-dim:  rgba(88,166,255,.12);
+      --text:        #e6edf3;
+      --muted:       #8b949e;
+      --subtle:      #6e7681;
+      --green:       #3fb950;
+      --green-dim:   rgba(63,185,80,.12);
+      --r:           10px;
+      --font:        'Inter', -apple-system, sans-serif;
+      --mono:        'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: var(--accent); text-decoration: none; transition: color .2s; }
+    a:hover { color: #79c0ff; }
+    img { display: block; max-width: 100%; }
+
+    /* ── Nav ───────────────────────────────────────────────── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: .9rem 2.5rem;
+      background: rgba(13,17,23,.82);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-size: .92rem; font-weight: 600;
+      color: var(--text); letter-spacing: .01em;
+      white-space: nowrap;
+    }
+    .nav-logo:hover { color: var(--text); }
+    .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; }
+    .nav-links a {
+      color: var(--muted); font-size: .875rem; font-weight: 500;
+      letter-spacing: .02em; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .nav-links .nav-cv {
+      color: var(--accent) !important;
+      border: 1px solid rgba(88,166,255,.35);
+      border-radius: 5px;
+      padding: .25rem .7rem;
+      transition: all .2s;
+    }
+    .nav-links .nav-cv:hover { background: var(--accent-dim); }
+    .nav-links .nav-blog {
+      color: var(--green) !important;
+      border: 1px solid rgba(63,185,80,.35);
+      border-radius: 5px;
+      padding: .25rem .7rem;
+      background: var(--green-dim);
+      transition: all .2s;
+    }
+    .nav-links .nav-blog:hover { color: var(--green) !important; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px; background: none; border: none;
+    }
+    .nav-burger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--muted); border-radius: 2px;
+    }
+
+    /* ── Main ──────────────────────────────────────────────── */
+    main {
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+    }
+
+    .blog-eyebrow {
+      font-family: var(--mono);
+      font-size: .8rem; color: var(--green);
+      letter-spacing: .15em; text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .blog-heading {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 700; line-height: 1.1;
+      margin-bottom: 2rem;
+      background: linear-gradient(140deg, #e6edf3 30%, #8b949e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    /* Place a funny GIF at /images/construction.gif */
+    .blog-gif {
+      width: 240px; height: auto;
+      border-radius: var(--r);
+      margin: 0 auto 2rem;
+      border: 1px solid var(--border);
+    }
+    .blog-desc {
+      color: var(--muted); font-size: 1rem;
+      max-width: 420px; line-height: 1.75;
+      margin: 0 auto;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border); padding: 2rem;
+      text-align: center; color: var(--subtle); font-size: .82rem;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 760px) {
+      #nav { padding: .9rem 1.5rem; }
+      .nav-links {
+        display: none; flex-direction: column; gap: .9rem;
+        position: fixed; top: 58px; left: 0; right: 0;
+        background: var(--bg2); padding: 1.5rem 2rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-links.open { display: flex; }
+      .nav-burger { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo">Hamidreza Yaghoubi</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/#about"        onclick="closeNav()">About</a></li>
+    <li><a href="/#publications" onclick="closeNav()">Publications</a></li>
+    <li><a href="/#experience"   onclick="closeNav()">Experience</a></li>
+    <li><a href="/#skills"       onclick="closeNav()">Skills</a></li>
+    <li><a href="/#honors"       onclick="closeNav()">Honors</a></li>
+    <li><a href="/#teaching"     onclick="closeNav()">Teaching</a></li>
+    <li><a href="/#service"      onclick="closeNav()">Service</a></li>
+    <li><a href="/blog.html" class="nav-blog" onclick="closeNav()">Blog</a></li>
+    <li><a href="https://drive.google.com/file/d/1tMHEjtGjEY1ap9z-15sRYZDpk4_v9w1f/view?usp=sharing"
+           target="_blank" rel="noopener" class="nav-cv" onclick="closeNav()">CV</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Toggle menu" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <p class="blog-eyebrow">blog</p>
+  <h1 class="blog-heading">Coming Soon</h1>
+  <!-- Add a funny construction GIF at /images/construction.gif -->
+  <img src="images/construction.gif" alt="Under construction" class="blog-gif" onerror="this.remove()">
+  <p class="blog-desc">
+    I'll be sharing thoughts on AI research, quantization, robustness, and temporal reasoning.
+    Check back soon.
+  </p>
+</main>
+
+<footer>
+  <p>
+    © 2026 Hamidreza Yaghoubi ·
+    <a href="mailto:yaghoubi@umd.edu">yaghoubi@umd.edu</a>
+  </p>
+</footer>
+
+<script>
+  function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
+  function closeNav()  { document.getElementById('navLinks').classList.remove('open'); }
+</script>
+</body>
+</html>

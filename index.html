@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamidreza Yaghoubi — AI Researcher</title>
-  <meta name="description" content="Ph.D. student at UMD GAMMA Lab researching AI safety and reliability.">
+  <title>Hamidreza Yaghoubi · AI Researcher</title>
+  <meta name="description" content="Ph.D. student at UMD GAMMA Lab researching quantization, robustness, and temporal understanding in Vision Language Models.">
   <link rel="icon" href="images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
       color: var(--text); letter-spacing: .01em;
       white-space: nowrap;
     }
-    .nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
+    .nav-links { display: flex; gap: 1.4rem; list-style: none; align-items: center; }
     .nav-links a {
       color: var(--muted); font-size: .875rem; font-weight: 500;
       letter-spacing: .02em; transition: color .2s;
@@ -78,6 +78,17 @@
     .nav-links .nav-cv:hover {
       background: var(--accent-dim);
       color: var(--accent) !important;
+    }
+    .nav-links .nav-blog {
+      color: var(--green) !important;
+      border: 1px solid rgba(63,185,80,.35);
+      border-radius: 5px;
+      padding: .25rem .7rem;
+      transition: all .2s;
+    }
+    .nav-links .nav-blog:hover {
+      background: var(--green-dim);
+      color: var(--green) !important;
     }
 
     /* hamburger */
@@ -146,6 +157,7 @@
       color: var(--muted); font-size: .97rem;
       line-height: 1.8; margin-bottom: 2.2rem;
       max-width: 560px;
+      text-align: justify;
     }
     .hero-bio a { color: var(--accent); }
 
@@ -209,7 +221,74 @@
 
     /* ── About ──────────────────────────────────────────────── */
     #about .prose { display: flex; flex-direction: column; gap: 1.1rem; }
-    #about .prose p { color: var(--muted); font-size: .97rem; line-height: 1.82; }
+    #about .prose p {
+      color: var(--muted); font-size: .97rem; line-height: 1.82;
+      text-align: justify;
+    }
+
+    .research-angles { display: flex; flex-direction: column; gap: 1.3rem; margin: .6rem 0; }
+    .angle {
+      display: flex; gap: 1.1rem; align-items: flex-start;
+      padding-left: 1rem;
+      border-left: 2px solid rgba(88,166,255,.35);
+      transition: border-color .2s;
+    }
+    .angle:hover { border-left-color: var(--accent); }
+    .angle-num {
+      font-family: var(--mono); font-size: .75rem;
+      color: var(--accent); font-weight: 500;
+      padding-top: .22rem; flex-shrink: 0;
+    }
+    .angle-body { font-size: .94rem; color: var(--muted); line-height: 1.82; }
+    .angle-title { font-weight: 600; color: var(--text); }
+    .angle-summary { text-align: justify; }
+    .angle-more {
+      overflow: hidden; max-height: 0;
+      transition: max-height .45s ease;
+      margin-top: .5em;
+      text-align: justify;
+    }
+    .angle-more p { margin-bottom: .6em; }
+    .angle-more p:last-child { margin-bottom: 0; }
+    .angle-more.open { max-height: 900px; }
+    .angle-toggle {
+      background: none; border: none; cursor: pointer;
+      font-family: var(--font); font-size: .8rem;
+      color: var(--accent); padding: .4rem 0 0;
+      display: inline-flex; align-items: center; gap: .25rem;
+      transition: color .2s; letter-spacing: .01em;
+    }
+    .angle-toggle:hover { color: #79c0ff; }
+
+    /* ── Citations ──────────────────────────────────────────── */
+    .cite-refs { font-size: .82em; }
+    .cite-refs a { color: var(--subtle); transition: color .2s; }
+    .cite-refs a:hover { color: var(--accent); }
+
+    /* ── Education ──────────────────────────────────────────── */
+    .edu-list { display: flex; flex-direction: column; gap: .85rem; }
+    .edu-card {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 1rem;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 1.3rem 1.5rem;
+      transition: border-color .2s;
+    }
+    .edu-card:hover { border-color: var(--border-hover); }
+    .edu-main { flex: 1; }
+    .edu-degree { font-size: .98rem; font-weight: 600; color: var(--text); }
+    .edu-detail { font-size: .82rem; color: var(--muted); margin-top: .3rem; }
+    .edu-right {
+      display: flex; flex-direction: column; align-items: flex-end;
+      gap: .35rem; flex-shrink: 0; text-align: right;
+    }
+    .edu-school { color: var(--accent); font-size: .88rem; font-weight: 600; }
+    .edu-date {
+      font-family: var(--mono); font-size: .76rem; color: var(--subtle);
+      background: var(--bg3); border: 1px solid var(--border);
+      padding: .25rem .65rem; border-radius: 5px;
+      white-space: nowrap;
+    }
 
     /* ── Publications ───────────────────────────────────────── */
     .pub-list { display: flex; flex-direction: column; gap: 1rem; }
@@ -274,7 +353,10 @@
       padding: .25rem .65rem; border-radius: 5px;
       white-space: nowrap; flex-shrink: 0;
     }
-    .exp-desc { color: var(--muted); font-size: .9rem; line-height: 1.75; margin-bottom: 1.2rem; }
+    .exp-desc {
+      color: var(--muted); font-size: .9rem; line-height: 1.75; margin-bottom: 1.2rem;
+      text-align: justify;
+    }
     .exp-items { display: flex; flex-direction: column; gap: .55rem; }
     .exp-item {
       display: flex; gap: .7rem;
@@ -391,7 +473,7 @@
       .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
       .hero-photo { order: -1; }
       .photo-ring { width: 150px; height: 150px; }
-      .hero-bio { max-width: 100%; }
+      .hero-bio { max-width: 100%; text-align: left; }
       .social-row { justify-content: center; }
 
       #nav { padding: .9rem 1.5rem; }
@@ -410,6 +492,8 @@
       .service-row { flex-direction: column; align-items: flex-start; gap: .4rem; }
       .skill-group { flex-direction: column; gap: .5rem; }
       .honor-row { grid-template-columns: 2.4rem 1fr; }
+      .edu-card { flex-direction: column; gap: .5rem; }
+      .edu-right { align-items: flex-start; text-align: left; }
     }
   </style>
 </head>
@@ -426,6 +510,7 @@
     <li><a href="#honors"       onclick="closeNav()">Honors</a></li>
     <li><a href="#teaching"     onclick="closeNav()">Teaching</a></li>
     <li><a href="#service"      onclick="closeNav()">Service</a></li>
+    <li><a href="/blog.html"    onclick="closeNav()" class="nav-blog">Blog</a></li>
     <li><a href="https://drive.google.com/file/d/1tMHEjtGjEY1ap9z-15sRYZDpk4_v9w1f/view?usp=sharing"
            target="_blank" rel="noopener" class="nav-cv" onclick="closeNav()">CV</a></li>
   </ul>
@@ -438,16 +523,17 @@
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="hero-eyebrow">AI Safety &amp; Reliability Research</p>
+      <p class="hero-eyebrow">AI Efficiency · Robustness · Temporal Reasoning</p>
       <h1 class="hero-name">Hamidreza<br>Yaghoubi</h1>
       <p class="hero-subtitle">Ph.D. Student · UMD GAMMA Lab</p>
       <p class="hero-bio">
-        I'm a Ph.D. student in Computer Engineering at
-        <a href="https://umd.edu" target="_blank" rel="noopener">University of Maryland</a>,
-        working in <a href="https://gamma.umd.edu/" target="_blank" rel="noopener">GAMMA Lab</a>
-        under Prof. <a href="https://www.cs.umd.edu/~lin/" target="_blank" rel="noopener">Ming Lin</a>.
-        My research focuses on robust and reliable machine learning, AI safety, and
-        spurious correlations in vision systems.
+        I build AI systems that stay reliable under the pressures of real-world deployment:
+        distribution shift, quantization constraints, and temporal complexity.
+        My current focus is on quantization and temporal understanding in Vision Language Models.
+        I'm a Ph.D. student at UMD's
+        <a href="https://gamma.umd.edu/" target="_blank" rel="noopener">GAMMA Lab</a>,
+        working with
+        <a href="https://www.cs.umd.edu/~lin/" target="_blank" rel="noopener">Prof. Ming Lin</a>.
       </p>
       <div class="social-row">
         <a href="mailto:yaghoubi@umd.edu" class="social-btn">
@@ -490,33 +576,102 @@
   </div>
   <div class="prose">
     <p class="reveal">
-      I'm a Ph.D. student in Computer Engineering at the
-      <a href="https://umd.edu" target="_blank" rel="noopener">University of Maryland, College Park</a>,
-      working in <a href="https://gamma.umd.edu/" target="_blank" rel="noopener">GAMMA Lab</a>
-      under the supervision of Professor
-      <a href="https://www.cs.umd.edu/~lin/" target="_blank" rel="noopener">Ming Lin</a>.
+      I build AI systems that stay reliable when they leave the lab: on edge devices,
+      under distribution shift, and under the compute constraints of real-world deployment.
+      I approach this through three connected threads:
     </p>
+    <div class="research-angles reveal">
+
+      <div class="angle">
+        <span class="angle-num">01</span>
+        <div class="angle-body">
+          <span class="angle-title">Robustness. </span><span class="angle-summary">Models that generalize well on average can fail silently on the inputs that matter most: rare events, distribution shift, and underrepresented subgroups.</span>
+          <div class="angle-more" id="angle-more-1">
+            <p>Models trained with standard empirical risk minimization learn shortcuts: features that correlate with labels in the training distribution but break on out-of-distribution inputs, causing confident failures on the inputs that matter most. My work targets this through spurious correlation methods that recover worst-group accuracy without group annotations (Decompose-and-Compose, CVPR 2024; Annotation-Free Group Robustness, OOD-CV @ ICCV 2023).</p>
+            <p>The same gap appears in trajectory forecasting: training datasets reflect typical, average driving behavior, so models perform poorly on rare or out-of-distribution driving styles. In AV deployment, a system that has not learned to anticipate aggressive or erratic drivers will simply fail to account for them on the road, which is not just an accuracy problem.</p>
+          </div>
+          <button class="angle-toggle" id="angle-btn-1" onclick="toggleAngle(1)">Show more ↓</button>
+        </div>
+      </div>
+
+      <div class="angle">
+        <span class="angle-num">02</span>
+        <div class="angle-body">
+          <span class="angle-title">Efficiency. </span><span class="angle-summary">Quantization is one of the most practical paths to efficient AI, but it can quietly change <em>which</em> inputs a model gets right, not just overall accuracy.</span>
+          <div class="angle-more" id="angle-more-2">
+            <p>Quantization converts full-precision model weights to lower-bit representations for efficient inference on constrained hardware. But compression is not neutral: PTQ models often preserve clean-input accuracy while losing robustness to distribution shift, a gap Recti-Q (IROS 2026) targets with a lightweight feature-space rectification adapter. AI's growing energy demand <span class="cite-refs">[<a href="https://www.nytimes.com/interactive/2026/04/27/opinion/electricity-power-grid-infrastructure.html" target="_blank" rel="noopener">NYT ↗</a>, <a href="https://www.bloomberg.com/graphics/2025-ai-data-centers-electricity-prices/" target="_blank" rel="noopener">Bloomberg ↗</a>]</span> makes efficient models more than an engineering preference.</p>
+            <p>Beyond robustness-aware quantization, I'm interested in smarter compression strategies more broadly and in applying quantization to Vision Language Models, where inference costs are especially high and edge deployment most pressing.</p>
+          </div>
+          <button class="angle-toggle" id="angle-btn-2" onclick="toggleAngle(2)">Show more ↓</button>
+        </div>
+      </div>
+
+      <div class="angle">
+        <span class="angle-num">03</span>
+        <div class="angle-body">
+          <span class="angle-title">Edge AI &amp; Temporal Understanding. </span><span class="angle-summary">Temporal reasoning in Vision Language Models is both computationally demanding and safety-critical, a gap that makes quantization-aware design for edge deployment essential.</span>
+          <div class="angle-more" id="angle-more-3">
+            <p>Edge devices, from phones to autonomous vehicles, must run complex AI under strict constraints on memory, latency, and power. The hardest challenge in this space is temporal understanding in Vision Language Models: reasoning about events, sequences, and causality across video frames.</p>
+            <p>This is my current primary research focus. VLMs are already expensive to run; genuine temporal reasoning makes the compute demands more acute. Making this viable at the edge requires quantization-aware design from the ground up, connecting directly to the efficiency and robustness directions above.</p>
+          </div>
+          <button class="angle-toggle" id="angle-btn-3" onclick="toggleAngle(3)">Show more ↓</button>
+        </div>
+      </div>
+
+    </div>
     <p class="reveal">
-      Previously, I completed my B.Sc. in Computer Engineering from
-      <a href="https://www.sharif.edu/" target="_blank" rel="noopener">Sharif University of Technology</a>,
-      where I worked with Professor
-      <a href="https://sharif.edu/~soleymani/" target="_blank" rel="noopener">Mahdieh Soleymani</a>
-      and Professor
-      <a href="https://sharif.edu/~rohban/index.html" target="_blank" rel="noopener">Mohammad Hossein Rohban</a>.
+      These three threads are tightly connected: reliable temporal reasoning demands
+      computational precision that standard quantization can undermine, making
+      robustness-aware efficiency a central challenge in my work.
     </p>
-    <p class="reveal">
-      My research interests include robust and reliable machine learning, interpretability and
-      faithfulness of vision–language models, spurious correlations and shortcut learning, and AI safety.
-      A recurring theme in my work is understanding when models appear accurate on average but
-      behave unexpectedly in important or edge cases.
-    </p>
+  </div>
+</div>
+
+<!-- ── Education ─────────────────────────────────────────────── -->
+<div class="section-wrap" id="education">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Education</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="edu-list stagger">
+    <div class="edu-card reveal">
+      <div class="edu-main">
+        <div class="edu-degree">Ph.D. in Computer Engineering</div>
+        <div class="edu-detail">Advisor: <a href="https://www.cs.umd.edu/~lin/" target="_blank" rel="noopener">Prof. Ming Lin</a> · GAMMA Lab</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-school">University of Maryland, College Park</div>
+        <div class="edu-date">2024 – Present</div>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-main">
+        <div class="edu-degree">M.Sc. in Computer Engineering</div>
+        <div class="edu-detail">Advisor: <a href="https://www.cs.umd.edu/~lin/" target="_blank" rel="noopener">Prof. Ming Lin</a> · GAMMA Lab</div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-school">University of Maryland, College Park</div>
+        <div class="edu-date">2024 – 2026</div>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-main">
+        <div class="edu-degree">B.Sc. in Computer Engineering</div>
+        <div class="edu-detail">Advisors: <a href="https://sharif.edu/~soleymani/" target="_blank" rel="noopener">Prof. Mahdieh Soleymani</a> · <a href="https://sharif.edu/~rohban/index.html" target="_blank" rel="noopener">Prof. Mohammad Hossein Rohban</a></div>
+      </div>
+      <div class="edu-right">
+        <div class="edu-school">Sharif University of Technology</div>
+        <div class="edu-date">2019 – 2024</div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- ── Publications ─────────────────────────────────────────── -->
 <div class="section-wrap" id="publications">
   <div class="section-header">
-    <span class="section-num">02</span>
+    <span class="section-num">03</span>
     <h2>Publications &amp; Preprints</h2>
     <div class="section-line"></div>
   </div>
@@ -625,7 +780,7 @@
 <!-- ── Experience ────────────────────────────────────────────── -->
 <div class="section-wrap" id="experience">
   <div class="section-header">
-    <span class="section-num">03</span>
+    <span class="section-num">04</span>
     <h2>Work Experience</h2>
     <div class="section-line"></div>
   </div>
@@ -634,7 +789,7 @@
     <div class="exp-top">
       <div>
         <div class="exp-role">Data Scientist</div>
-        <div class="exp-company">TAPSI — Iranian Version of Uber</div>
+        <div class="exp-company">TAPSI · Tehran, Iran</div>
       </div>
       <div class="exp-date">Feb 2021 – Feb 2023</div>
     </div>
@@ -662,34 +817,39 @@
 <!-- ── Skills ───────────────────────────────────────────────── -->
 <div class="section-wrap" id="skills">
   <div class="section-header">
-    <span class="section-num">04</span>
+    <span class="section-num">05</span>
     <h2>Skills</h2>
     <div class="section-line"></div>
   </div>
   <div class="skills-grid reveal">
     <div class="skill-group">
-      <span class="skill-label">Programming</span>
+      <span class="skill-label">Research</span>
       <div class="skill-tags">
         <span class="skill-tag">Python</span>
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">C</span>
-        <span class="skill-tag">C++</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Bash</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <span class="skill-label">Software</span>
-      <div class="skill-tags">
         <span class="skill-tag">PyTorch</span>
         <span class="skill-tag">TensorFlow</span>
         <span class="skill-tag">Keras</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Data &amp; Infra</span>
+      <div class="skill-tags">
         <span class="skill-tag">PySpark</span>
         <span class="skill-tag">Pandas</span>
         <span class="skill-tag">NumPy</span>
         <span class="skill-tag">Matplotlib</span>
         <span class="skill-tag">Seaborn</span>
         <span class="skill-tag">Luigi</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Bash</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Systems</span>
+      <div class="skill-tags">
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">Java</span>
       </div>
     </div>
     <div class="skill-group">
@@ -705,7 +865,7 @@
 <!-- ── Honors & Awards ───────────────────────────────────────── -->
 <div class="section-wrap" id="honors">
   <div class="section-header">
-    <span class="section-num">05</span>
+    <span class="section-num">06</span>
     <h2>Honors &amp; Awards</h2>
     <div class="section-line"></div>
   </div>
@@ -713,28 +873,28 @@
     <div class="honor-row reveal">
       <span class="honor-year">2025</span>
       <div class="honor-body">
-        <div class="honor-title">Fellowship — UMD ECE Summer Research Fellowship</div>
+        <div class="honor-title">Fellowship: UMD ECE Summer Research Fellowship</div>
         <div class="honor-org">University of Maryland, College Park · Maryland, USA</div>
       </div>
     </div>
     <div class="honor-row reveal">
       <span class="honor-year">2019</span>
       <div class="honor-body">
-        <div class="honor-title">Bronze Medal — 13th International Olympiad on Astronomy and Astrophysics</div>
+        <div class="honor-title">Bronze Medal: 13th International Olympiad on Astronomy and Astrophysics</div>
         <div class="honor-org">Keszthely, Hungary</div>
       </div>
     </div>
     <div class="honor-row reveal">
       <span class="honor-year">2018</span>
       <div class="honor-body">
-        <div class="honor-title">Gold Medal — 14th National Olympiad on Astronomy and Astrophysics</div>
+        <div class="honor-title">Gold Medal: 14th National Olympiad on Astronomy and Astrophysics</div>
         <div class="honor-org">Tehran, Iran</div>
       </div>
     </div>
     <div class="honor-row reveal">
       <span class="honor-year">2015</span>
       <div class="honor-body">
-        <div class="honor-title">Winner — 1st Tehran and Alborz Province Inventions Festival</div>
+        <div class="honor-title">Winner: 1st Tehran and Alborz Province Inventions Festival</div>
         <div class="honor-org">Tehran, Iran</div>
       </div>
     </div>
@@ -744,7 +904,7 @@
 <!-- ── Teaching ──────────────────────────────────────────────── -->
 <div class="section-wrap" id="teaching">
   <div class="section-header">
-    <span class="section-num">06</span>
+    <span class="section-num">07</span>
     <h2>Teaching Experience</h2>
     <div class="section-line"></div>
   </div>
@@ -792,7 +952,7 @@
 <!-- ── Academic Service ──────────────────────────────────────── -->
 <div class="section-wrap" id="service">
   <div class="section-header">
-    <span class="section-num">07</span>
+    <span class="section-num">08</span>
     <h2>Academic Service</h2>
     <div class="section-line"></div>
   </div>
@@ -862,6 +1022,13 @@
 <script>
   function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
   function closeNav()  { document.getElementById('navLinks').classList.remove('open'); }
+
+  function toggleAngle(n) {
+    const more = document.getElementById('angle-more-' + n);
+    const btn  = document.getElementById('angle-btn-' + n);
+    const open = more.classList.toggle('open');
+    btn.textContent = open ? 'Show less ↑' : 'Show more ↓';
+  }
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
